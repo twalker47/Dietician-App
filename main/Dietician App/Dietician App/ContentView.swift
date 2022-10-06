@@ -38,10 +38,12 @@ struct ContentView: View {
                 print(weight)
                 print(height)
                 print(age)
-                let mifflinResult = mifflin(sex: true, weight: Float(weight), height: Float(height), age: Float(age))
-                let statement = "Calories for patient: \(mifflinResult) kcal"
+                let mifflinResultM = mifflin(sex: true, weight: Float(weight), height: Float(height), age: Float(age))
+                var statement = "Calories for male patient: \(mifflinResultM) kcal"
                 print(statement)
-                
+                let mifflinResultF = mifflin(sex: false, weight: Float(weight), height: Float(height), age: Float(age))
+                statement = "Calories for female patient: \(mifflinResultF) kcal"
+                print(statement)
             }
         }.padding()
         
