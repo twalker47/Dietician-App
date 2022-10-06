@@ -7,18 +7,44 @@
 
 import SwiftUI
 
-var mifflinResult = mifflin(sex: true, weight: 100, height: 180, age: 60)
-var statement = "Calories for patient: \(mifflinResult) kcal"
+
 struct ContentView: View {
+    @State var weight = 0
+    @State var height = 0
+    @State var age = 0
+    
+    let formatter: NumberFormatter = {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            return formatter
+        }()
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            //Text("Hello, world!")
-            Text(statement)
-        }
-        .padding()
+            Text("Mifflin-St. Jeor")
+            HStack(alignment: .center){
+                Text("Weight: ")
+                TextField("Enter patient's weight", value: $weight, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
+            }.padding()
+            HStack(alignment: .center){
+                Text("Height: ")
+                TextField("Enter patient's height", value: $height, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
+            }.padding()
+            HStack(alignment: .center){
+                Text("age: ")
+                TextField("Enter patient's age", value: $age, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
+            }.padding()
+            Button("Click Me") {
+                print(weight)
+                print(height)
+                print(age)
+                let mifflinResult = mifflin(sex: true, weight: Float(weight), height: Float(height), age: Float(age))
+                let statement = "Calories for patient: \(mifflinResult) kcal"
+                print(statement)
+                
+            }
+        }.padding()
+        
     }
 }
 
