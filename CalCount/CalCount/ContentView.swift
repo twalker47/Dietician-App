@@ -9,15 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
+        
+        
         ZStack {
-            Color.blue
+            Color.white
                 .ignoresSafeArea()
-            Text("ContentView")
                 .foregroundColor(.white)
                 .font(.system(size: 30))
+            
+            VStack{
+                Button("Button 1") {
+                
+            }
+                Button("Button 2"){
+                    
+                }
+            }
+            .buttonStyle(.bordered)
         }
     }
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
