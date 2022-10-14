@@ -16,11 +16,11 @@
 
 /* Begin PBXFileReference section */
 		C1638B4B28DA2BBF00D40161 /* Dietician App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dietician App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C1638B4E28DA2BBF00D40161 /* Dietician_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dietician_AppApp.swift; sourceTree = "<group>"; };
-		C1638B5028DA2BBF00D40161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		C1638B5228DA2BC400D40161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C1638B5528DA2BC400D40161 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C1638B5C28DA2F6400D40161 /* mifflin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mifflin.swift; sourceTree = "<group>"; };
+		C1638B4E28DA2BBF00D40161 /* Dietician_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Dietician_AppApp.swift; path = DietitianApp/Dietician_AppApp.swift; sourceTree = "<group>"; };
+		C1638B5028DA2BBF00D40161 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ContentView.swift; path = DietitianApp/ContentView.swift; sourceTree = "<group>"; };
+		C1638B5228DA2BC400D40161 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = DietitianApp/Assets.xcassets; sourceTree = "<group>"; };
+		C1638B5528DA2BC400D40161 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Preview Assets.xcassets"; path = "DietitianApp/Preview Content/Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C1638B5C28DA2F6400D40161 /* mifflin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = mifflin.swift; path = DietitianApp/mifflin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 		C1638B4228DA2BBF00D40161 = {
 			isa = PBXGroup;
 			children = (
-				C1638B4D28DA2BBF00D40161 /* Dietician App */,
+				C1638B4D28DA2BBF00D40161 /* DietitianApp */,
 				C1638B4C28DA2BBF00D40161 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,7 +50,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C1638B4D28DA2BBF00D40161 /* Dietician App */ = {
+		C1638B4D28DA2BBF00D40161 /* DietitianApp */ = {
 			isa = PBXGroup;
 			children = (
 				C1638B4E28DA2BBF00D40161 /* Dietician_AppApp.swift */,
@@ -59,8 +59,9 @@
 				C1638B5228DA2BC400D40161 /* Assets.xcassets */,
 				C1638B5428DA2BC400D40161 /* Preview Content */,
 			);
-			path = "Dietician App";
-			sourceTree = "<group>";
+			name = DietitianApp;
+			path = ../newname/DietitianApp;
+			sourceTree = SOURCE_ROOT;
 		};
 		C1638B5428DA2BC400D40161 /* Preview Content */ = {
 			isa = PBXGroup;
@@ -68,7 +69,7 @@
 				C1638B5528DA2BC400D40161 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -105,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C1638B4628DA2BBF00D40161 /* Build configuration list for PBXProject "Dietician App" */;
+			buildConfigurationList = C1638B4628DA2BBF00D40161 /* Build configuration list for PBXProject "DietitianApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -324,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C1638B4628DA2BBF00D40161 /* Build configuration list for PBXProject "Dietician App" */ = {
+		C1638B4628DA2BBF00D40161 /* Build configuration list for PBXProject "DietitianApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C1638B5728DA2BC400D40161 /* Debug */,
