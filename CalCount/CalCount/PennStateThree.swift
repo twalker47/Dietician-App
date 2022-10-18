@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct PennStateThree: View {
     var body: some View {
         
         
@@ -19,12 +19,10 @@ struct ContentView: View {
                 .font(.system(size: 30))
             
             VStack{
-                Button("Guided Mdoe") {
+                Button("Stuff for PennState2003b Equation ") {
                 
-            }
-                Button("Manual Mode"){
-                    
                 }
+               
             }
             .buttonStyle(.bordered)
         }
@@ -32,8 +30,10 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct PennStateThree_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        PennStateThree()
     }
 }
+
+

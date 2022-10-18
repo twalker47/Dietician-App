@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MiffinStJeor: View {
     var body: some View {
         
         
@@ -19,12 +19,10 @@ struct ContentView: View {
                 .font(.system(size: 30))
             
             VStack{
-                Button("Guided Mdoe") {
+                Button("Stuff for Miffin Equation ") {
                 
-            }
-                Button("Manual Mode"){
-                    
                 }
+               
             }
             .buttonStyle(.bordered)
         }
@@ -32,8 +30,9 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct MiffinStJeor_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MiffinStJeor()
     }
 }
+

@@ -21,18 +21,18 @@ struct SplashScreenView: View {
                     Image(systemName: "hare.fill")
                         .font(.system(size: 80))
                         .foregroundColor(.red)
-                    Text("Epic App 2")
+                    Text("CalCount")
                         .font(Font.custom("Baskerville-Bold", size: 26))
                         .foregroundColor(.black.opacity(0.80))
                 }
-                .scaleEffect(size)
-                .opacity(opacity)
-                .onAppear() {
-                    withAnimation(.easeIn(duration: 1.2)) {
-                        self.size = 0.9
-                        self.opacity = 1.0
-                    }
-                }
+          //      .scaleEffect(size)
+            //    .opacity(opacity)
+              //  .onAppear() {
+                //    withAnimation(.easeIn(duration: 1.2)) {
+                  //      self.size = 0.9
+                    //    self.opacity = 1.0
+                   // }
+               // }
             }
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {

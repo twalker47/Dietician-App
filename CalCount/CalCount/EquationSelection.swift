@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct EquationSelection: View {
     var body: some View {
         
         
@@ -19,10 +19,10 @@ struct ContentView: View {
                 .font(.system(size: 30))
             
             VStack{
-                Button("Guided Mdoe") {
+                Button("Equation") {
                 
             }
-                Button("Manual Mode"){
+                Button("Equation"){
                     
                 }
             }
@@ -32,8 +32,8 @@ struct ContentView: View {
 }
 
 
-struct ContentView_Previews: PreviewProvider {
+struct EquationSelection_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        EquationSelection()
     }
 }
