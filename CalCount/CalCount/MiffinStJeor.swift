@@ -1,0 +1,38 @@
+//
+//  ContentView.swift
+//  CalCount
+//
+//  Created by Brittany Bishop on 10/10/22.
+//
+
+import SwiftUI
+
+struct MiffinStJeor: View {
+    var body: some View {
+        
+        
+        
+        ZStack {
+            Color.white
+                .ignoresSafeArea()
+                .foregroundColor(.white)
+                .font(.system(size: 30))
+            
+            VStack{
+                Button("Stuff for Miffin Equation ") {
+                
+                }
+               
+            }
+            .buttonStyle(.bordered)
+        }
+    }
+}
+
+
+struct MiffinStJeor_Previews: PreviewProvider {
+    static var previews: some View {
+        MiffinStJeor()
+    }
+}
+
