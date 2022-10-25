@@ -19,32 +19,12 @@ struct ContentView: View {
                 .font(.system(size: 30))
             
             VStack{
+                Text("Which mode would you like to use?")
+                    .fontWeight(.medium)
+                    .foregroundColor(Color(red: 108/255, green:139/255 , blue:107/255 ))
+                    .padding()
+                    .offset(y: -100)
                 Button("Guided Mode") {
-                    var view = UILabel()
-
-                    view.frame = CGRect(x: 0, y: 0, width: 306, height: 145)
-
-                    view.backgroundColor = .white
-
-
-                    view.layer.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
-
-
-                    var parent = self.view!
-
-                    parent.addSubview(view)
-
-                    view.translatesAutoresizingMaskIntoConstraints = false
-
-                    view.widthAnchor.constraint(equalToConstant: 306).isActive = true
-
-                    view.heightAnchor.constraint(equalToConstant: 145).isActive = true
-
-                    view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 20).isActive = true
-
-                    view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 177).isActive = true
-
-
             }
                 Button("Manual Mode"){
                     
