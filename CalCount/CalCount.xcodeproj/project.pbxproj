@@ -20,6 +20,7 @@
 		BBFC71CF28F501B900CDDC0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFC71CE28F501B900CDDC0A /* Preview Assets.xcassets */; };
 		BBFC71D628F502EE00CDDC0A /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC71D528F502EE00CDDC0A /* SplashScreenView.swift */; };
 		C1B441EF2906475800156BB5 /* mifflin_equation.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B441EE2906475800156BB5 /* mifflin_equation.swift */; };
+		C1EF6E4029088EAD007E4E25 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EF6E3F29088EAD007E4E25 /* Results.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		BBFC71CE28F501B900CDDC0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBFC71D528F502EE00CDDC0A /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		C1B441EE2906475800156BB5 /* mifflin_equation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mifflin_equation.swift; sourceTree = "<group>"; };
+		C1EF6E3F29088EAD007E4E25 /* Results.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 				BBFC71C928F501B700CDDC0A /* ContentView.swift */,
 				BB5F1B4A28FF274F00B4C7D7 /* EquationSelection.swift */,
 				BB5F1B4C28FF2A1900B4C7D7 /* MiffinStJeor.swift */,
+				C1EF6E3F29088EAD007E4E25 /* Results.swift */,
 				BB5F1B4E28FF2B4200B4C7D7 /* HarrisBenedict.swift */,
 				BB5F1B5028FF2B9E00B4C7D7 /* Livingston.swift */,
 				BB5F1B5228FF2BF600B4C7D7 /* PennStateThree.swift */,
@@ -173,6 +176,7 @@
 				BB5F1B4D28FF2A1900B4C7D7 /* MiffinStJeor.swift in Sources */,
 				BBFC71C828F501B700CDDC0A /* CalCountApp.swift in Sources */,
 				BB5F1B4F28FF2B4200B4C7D7 /* HarrisBenedict.swift in Sources */,
+				C1EF6E4029088EAD007E4E25 /* Results.swift in Sources */,
 				BBFC71D628F502EE00CDDC0A /* SplashScreenView.swift in Sources */,
 				BB5F1B5528FF2C0800B4C7D7 /* PennStateTen.swift in Sources */,
 			);
