@@ -19,6 +19,7 @@
 		BBFC71CC28F501B900CDDC0A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFC71CB28F501B900CDDC0A /* Assets.xcassets */; };
 		BBFC71CF28F501B900CDDC0A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBFC71CE28F501B900CDDC0A /* Preview Assets.xcassets */; };
 		BBFC71D628F502EE00CDDC0A /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBFC71D528F502EE00CDDC0A /* SplashScreenView.swift */; };
+		BE4F224129076E930094601A /* SwiftUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4F224029076E930094601A /* SwiftUIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		BBFC71CB28F501B900CDDC0A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBFC71CE28F501B900CDDC0A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBFC71D528F502EE00CDDC0A /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		BE4F224029076E930094601A /* SwiftUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				BBFC71C728F501B700CDDC0A /* CalCountApp.swift */,
 				BBFC71D528F502EE00CDDC0A /* SplashScreenView.swift */,
 				BBFC71C928F501B700CDDC0A /* ContentView.swift */,
+				BE4F224029076E930094601A /* SwiftUIView.swift */,
 				BB5F1B4A28FF274F00B4C7D7 /* EquationSelection.swift */,
 				BB5F1B4C28FF2A1900B4C7D7 /* MiffinStJeor.swift */,
 				BB5F1B4E28FF2B4200B4C7D7 /* HarrisBenedict.swift */,
@@ -163,6 +166,7 @@
 			files = (
 				BB5F1B5328FF2BF600B4C7D7 /* PennStateThree.swift in Sources */,
 				BB5F1B5128FF2B9E00B4C7D7 /* Livingston.swift in Sources */,
+				BE4F224129076E930094601A /* SwiftUIView.swift in Sources */,
 				BB5F1B5728FF2C1800B4C7D7 /* TotalCals.swift in Sources */,
 				BB5F1B4B28FF274F00B4C7D7 /* EquationSelection.swift in Sources */,
 				BBFC71CA28F501B700CDDC0A /* ContentView.swift in Sources */,
