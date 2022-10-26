@@ -10,46 +10,49 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        
-        
         ZStack {
             Color.white
                 .ignoresSafeArea()
                 .foregroundColor(.white)
                 .font(.system(size: 30))
             
-            VStack{
-                Button("Guided Mode") {
-                    var view = UILabel()
-
-                    view.frame = CGRect(x: 0, y: 0, width: 306, height: 145)
-
-                    view.backgroundColor = .white
-
-
-                    view.layer.backgroundColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0).cgColor
-
-
-                    var parent = self.view!
-
-                    parent.addSubview(view)
-
-                    view.translatesAutoresizingMaskIntoConstraints = false
-
-                    view.widthAnchor.constraint(equalToConstant: 306).isActive = true
-
-                    view.heightAnchor.constraint(equalToConstant: 145).isActive = true
-
-                    view.leadingAnchor.constraint(equalTo: parent.leadingAnchor, constant: 20).isActive = true
-
-                    view.topAnchor.constraint(equalTo: parent.topAnchor, constant: 177).isActive = true
-
-
-            }
-                Button("Manual Mode"){
-                    
+            VStack(alignment: .center, spacing: 12.0){
+                
+                Text("Which mode would you like to use?")
+                    .font(.title)
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("Sage Green"))
+                    .multilineTextAlignment(.center)
+                                
+                Button(action: {
+                    //go to equation selection
+                }) {
+                    VStack{
+                        Text("Manual Mode")
+                            .font(.headline)
+                        Text("Select which equation to use, then provide information about the patient.")
+                            .font(.body)
+                            .foregroundColor(Color.gray)
+                    }
+                    .background(Color(.white))
                 }
-            }
+                
+                Button(action: {
+                    //go to manual mode
+                }) {
+                    VStack{
+                        Text("Guided Mode")
+                            .font(.headline)
+                        Text("Provide information to determine which equation should be used, then the correct equation will be selected for you.")
+                            .font(.body)
+                            .foregroundColor(Color.gray)
+                    }
+                    .background(Color(.white))
+                }
+                
+            }.frame(maxWidth: .infinity, // Full Screen Width
+                    maxHeight: .infinity, // Full Screen Height
+                    alignment: .topLeading) // Align To top
             .buttonStyle(.bordered)
         }
     }
