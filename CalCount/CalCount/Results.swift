@@ -13,7 +13,7 @@ struct Results: View {
     var body: some View {
         VStack{
             Text("The patient should intake")
-            Text(mifflin_statement1)
+            Text(statement)
             Text("calories")
             Button("Dismiss Me") {
                 presentationMode.wrappedValue.dismiss()

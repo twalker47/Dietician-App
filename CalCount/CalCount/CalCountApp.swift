@@ -13,7 +13,9 @@ struct CalCountApp: App {
         WindowGroup {
             //SplashScreenView()
             //ContentView()
-            MiffinStJeor()
+            //MiffinStJeor()
+            //PennStateTen()
+            PennStateH()
         }
     }
 }
