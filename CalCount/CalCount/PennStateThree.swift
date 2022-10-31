@@ -19,6 +19,9 @@ struct PennStateThree: View {
                 .font(.system(size: 30))
             
             VStack{
+                Button("Previous Page"){
+                
+                }
                 Button("Stuff for PennState2003b Equation ") {
                 
                 }

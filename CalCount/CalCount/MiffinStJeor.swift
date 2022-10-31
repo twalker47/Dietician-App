@@ -19,6 +19,9 @@ struct MiffinStJeor: View {
                 .font(.system(size: 30))
             
             VStack{
+                Button("Previous Page"){
+                
+                }
                 Button("Stuff for Miffin Equation ") {
                 
                 }

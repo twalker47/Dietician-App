@@ -23,7 +23,19 @@ struct ContentView: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color("Sage Green"))
                     .multilineTextAlignment(.center)
-                                
+                Button(action: {
+                    //go back to splash screen
+                }) {
+                    VStack{
+                    
+                        Text("Previous Page")
+                            .font(.headline)
+                        Text("Take me back to Splash Screen ")
+                            .font(.body)
+                            .foregroundColor(Color.gray)
+                    }
+                    .background(Color(.white))
+                }
                 Button(action: {
                     //go to equation selection
                 }) {

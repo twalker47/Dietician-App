@@ -19,6 +19,9 @@ struct EquationSelection: View {
                 .font(.system(size: 30))
             
             VStack{
+                Button("Previous Page"){
+                
+                }
                 Button("Equation") {
                 
             }

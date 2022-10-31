@@ -19,6 +19,9 @@ struct TotalCals: View {
                 .font(.system(size: 30))
             
             VStack{
+                Button("Previous Page"){
+                
+                }
                 Button("Stuff for Total Number of Calories ") {
                 
                 }
