@@ -18,25 +18,37 @@ struct EquationSelection: View {
                 .foregroundColor(.white)
                 .font(.system(size: 30))
             
-            VStack{
-                Button("Previous Page"){
-                
+            NavigationView {
+                VStack{
+                    //   Text("Please Choose: ")
+                    NavigationLink(destination: MiffinStJeor()){
+                        Text("MiffinStJeor ")
+                    }
+                    NavigationLink(destination: MiffinStJeor()){
+                        Text("MiffinStJeor")
+                    }
                 }
-                Button("Equation") {
-                
+                /*        }
+                 //   VStack{
+                 
+                 //      Button("Equation") {
+                 
+                 //  }
+                 //    Button("Equation"){
+                 
+                 }
+                 }
+                 .buttonStyle(.bordered)
+                 }
+                 }
+                 }
+                 
+                 
+                 struct EquationSelection_Previews: PreviewProvider {
+                 static var previews: some View {
+                 EquationSelection()
+                 }*/
             }
-                Button("Equation"){
-                    
-                }
-            }
-            .buttonStyle(.bordered)
         }
-    }
-}
-
-
-struct EquationSelection_Previews: PreviewProvider {
-    static var previews: some View {
-        EquationSelection()
     }
 }
