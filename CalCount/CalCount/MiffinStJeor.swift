@@ -28,7 +28,7 @@ struct MiffinStJeor: View {
                
             }
             .buttonStyle(.bordered)
-        }
+        }//end ZStack
     }
 }
 
