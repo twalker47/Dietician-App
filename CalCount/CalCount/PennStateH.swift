@@ -1,30 +1,28 @@
 //
-//  ContentView.swift
+//  PennStateH.swift
 //  CalCount
 //
-//  Created by Brittany Bishop on 10/10/22.
+//  Created by Greg Young on 10/26/22.
 //
 
 import SwiftUI
 
-public var statement = ""
 
-let formatter: NumberFormatter = {
-        let formatter = NumberFormatter()
-        formatter.numberStyle = .decimal
-        return formatter
-    }()
-
-
-struct MiffinStJeor: View {
-    @State var sex = true
-    @State var weight = 0
-    @State var height = 0
-    @State var age = 0
-    @State var showingDetail = false
     
     
-    
+struct PennStateH: View {
+    let formatter: NumberFormatter = {
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .decimal
+            return formatter
+        }()
+
+        @State var sex = true
+        @State var weight = 0
+        @State var height = 0
+        @State var age = 0
+        @State var tMax = 0
+        @State var showingDetail = false
     var body: some View {
         
         
@@ -36,7 +34,7 @@ struct MiffinStJeor: View {
                 .font(.system(size: 30))
             
             VStack{
-                Text("Mifflin-St. Jeor").padding()
+                Text("Penn State for Hospitalized, non-ventilated patients").padding()
                 HStack{
                     Text("Sex").padding()
                     Button("Male") {
@@ -67,14 +65,19 @@ struct MiffinStJeor: View {
                     Text("age: ")
                     TextField("Enter patient's age", value: $age, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
                 }.padding()
+                HStack(alignment: .center){
+                    Text("max temp: ")
+                    TextField("Enter patient's maximum temperature", value: $tMax, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
+                }.padding()
                 Button(action: {
                     self.showingDetail.toggle()
                     print(sex)
                     print(weight)
                     print(height)
                     print(age)
-                    let mifflinResult = mifflin(sex: sex, weight: Float(weight), height: Float(height), age: Float(age))
-                    statement = "\(mifflinResult)"         
+                    print(tMax)
+                    let pennStateHResult = pennStateH(sex: sex, weight: Float(weight), height: Float(height), age: Float(age), tMax: Float(tMax))
+                    statement = "\(pennStateHResult)"
                 }) {
                     Text("Calculate")
                 }.sheet(isPresented: $showingDetail) {
@@ -86,11 +89,11 @@ struct MiffinStJeor: View {
 }
 
 
-struct MiffinStJeor_Previews: PreviewProvider {
+
+struct PennStateH_Previews: PreviewProvider {
     static var previews: some View {
-        MiffinStJeor()
+        PennStateH()
     }
 }
-
 
 
