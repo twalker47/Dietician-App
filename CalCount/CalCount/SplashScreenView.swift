@@ -16,7 +16,11 @@ struct SplashScreenView: View {
         if isActive {
             ContentView()
         } else {
-            VStack {
+            ZStack {
+                 Color.white
+                     .ignoresSafeArea()
+                     .foregroundColor(.white)
+                     .font(.system(size: 30))
                 VStack {
                     Image(systemName: "hare.fill")
                         .font(.system(size: 80))
@@ -25,14 +29,14 @@ struct SplashScreenView: View {
                         .font(Font.custom("Baskerville-Bold", size: 26))
                         .foregroundColor(.black.opacity(0.80))
                 }
-          //      .scaleEffect(size)
-            //    .opacity(opacity)
-              //  .onAppear() {
-                //    withAnimation(.easeIn(duration: 1.2)) {
-                  //      self.size = 0.9
-                    //    self.opacity = 1.0
-                   // }
-               // }
+                .scaleEffect(size)
+                .opacity(opacity)
+                .onAppear() {
+                    withAnimation(.easeIn(duration: 1.2)) {
+                        self.size = 0.9
+                        self.opacity = 1.0
+                    }
+                }
             }
             .onAppear {
                 DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {

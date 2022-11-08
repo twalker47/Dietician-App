@@ -52,6 +52,7 @@ struct PennStateTen: View {
                     .padding()
                     .background(Color.white)
                     .clipShape(Capsule())
+
                 }
                 
                 HStack(alignment: .center){

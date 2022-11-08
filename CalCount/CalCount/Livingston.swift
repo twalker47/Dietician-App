@@ -19,6 +19,9 @@ struct Livingston: View {
                 .font(.system(size: 30))
             
             VStack{
+                Button("Previous Page"){
+                
+                }
                 Button("Stuff for Livingston Equation ") {
                 
                 }

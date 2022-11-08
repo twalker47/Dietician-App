@@ -19,6 +19,9 @@ struct HarrisBenedict: View {
                 .font(.system(size: 30))
             
             VStack{
+                Button("Previous Page"){
+                
+                }
                 Button("Stuff for Benedict Equation ") {
                 
                 }
