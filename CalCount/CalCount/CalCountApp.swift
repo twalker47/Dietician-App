@@ -15,7 +15,9 @@ struct CalCountApp: App {
             //ContentView()
             //MiffinStJeor()
             //PennStateTen()
-            PennStateH()
+            //PennStateH()
+            //EquationSelection()
+            SplashScreenView()
         }
     }
 }
