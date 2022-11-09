@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R0R-XU-n0a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="R0R-XU-n0a">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -184,7 +184,7 @@
         <!--Mifflin St. Jeor-->
         <scene sceneID="NDS-gu-3lF">
             <objects>
-                <viewController id="2i7-VC-hJ8" userLabel="Mifflin St. Jeor" sceneMemberID="viewController">
+                <viewController id="2i7-VC-hJ8" userLabel="Mifflin St. Jeor" customClass="MifflinController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AAR-Hs-mmp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,6 +235,9 @@
                                                     <segment title="M"/>
                                                     <segment title="F"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="mifflinSexSelection:" destination="2i7-VC-hJ8" eventType="valueChanged" id="eV2-WH-Nys"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahf-Gj-crQ">
                                                 <rect key="frame" x="96.666666666666686" y="243" width="200" height="30"/>
@@ -254,6 +257,9 @@
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="mifflin_height_field:" destination="s0a-bW-JqR" eventType="editingDidEnd" id="pxk-2j-FuS"/>
+                                                </connections>
                                             </textField>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="pSo-Fr-n9l">
                                                 <rect key="frame" x="211.66666666666666" y="272.66666666666669" width="79.999999999999972" height="36"/>
@@ -321,7 +327,8 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="fTA-oE-39E" kind="show" id="BEE-QW-yYw"/>
+                                                    <action selector="mifflinSubmit:" destination="2i7-VC-hJ8" eventType="touchUpInside" id="KhD-8Q-oHH"/>
+                                                    <action selector="mifflin_submit:" destination="s0a-bW-JqR" eventType="touchUpInside" id="PNy-q3-Lzy"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter value..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yU6-oR-cf9">
@@ -390,15 +397,25 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="neT-nK-H1u"/>
+                    <connections>
+                        <outlet property="mifflinAgeField" destination="yU6-oR-cf9" id="cXJ-gJ-Hfp"/>
+                        <outlet property="mifflinHeightField" destination="M0n-Tm-ubA" id="vND-cK-2W2"/>
+                        <outlet property="mifflinHeightUnitsSelection" destination="pSo-Fr-n9l" id="GND-vA-iSe"/>
+                        <outlet property="mifflinSexSelection" destination="UUH-Ji-D6e" id="X1C-UB-yUz"/>
+                        <outlet property="mifflinWeightField" destination="1B1-a2-5d8" id="imA-T4-gag"/>
+                        <outlet property="mifflinWeightUnitsSelection" destination="Cew-u1-LYT" id="e0e-hN-5q5"/>
+                        <segue destination="fTA-oE-39E" kind="show" identifier="mifflinResultsSegue" id="PQn-l4-Qp7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6TL-lH-p6l" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="s0a-bW-JqR" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2090.8396946564885" y="-37.323943661971832"/>
         </scene>
-        <!--View Controller-->
+        <!--Results Controller-->
         <scene sceneID="SUf-2f-moj">
             <objects>
-                <viewController id="fTA-oE-39E" sceneMemberID="viewController">
+                <viewController id="fTA-oE-39E" customClass="ResultsController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rbx-NB-Rac">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -598,6 +615,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="L7d-hU-yPm"/>
+                    <connections>
+                        <outlet property="rmr" destination="1we-fV-WXr" id="MW6-rC-C31"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8i-ty-897" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -623,7 +643,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BEE-QW-yYw"/>
+        <segue reference="PQn-l4-Qp7"/>
         <segue reference="ewl-Xa-RJ3"/>
     </inferredMetricsTieBreakers>
     <resources>
