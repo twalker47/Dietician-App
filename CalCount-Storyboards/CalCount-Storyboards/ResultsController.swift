@@ -9,7 +9,7 @@ import UIKit
 
 class ResultsController: UIViewController {
     
-    var myResults:[Double] = []
+    var myResults = 0.0
     
     @IBOutlet weak var rmr: UILabel!
         
@@ -26,12 +26,12 @@ class ResultsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        rmr.text = String(myResults[0])
-        factor11.text = String(myResults[1])
-        factor12.text = String(myResults[2])
-        factor13.text = String(myResults[3])
-        factor14.text = String(myResults[4])
-        factor15.text = String(myResults[5])
+        rmr.text = String(round(myResults))
+        factor11.text = String(round(myResults * 1.1))
+        factor12.text = String(round(myResults * 1.2))
+        factor13.text = String(round(myResults * 1.3))
+        factor14.text = String(round(myResults * 1.4))
+        factor15.text = String(round(myResults * 1.5))
         // Do any additional setup after loading the view.
     }
     

@@ -70,7 +70,10 @@ class MifflinController: UIViewController {
         weight = Double(mifflinWeightField.text!) ?? 0.0
         age = Double(mifflinAgeField.text!) ?? 0.0
         
-        let mifflinResult = mifflin(sex: sex, weight: weight, height: height, age: age, cm: hUnits, kg: wUnits)
+        let heightCorrected = correctHeightUnits(height: height, cm: hUnits)
+        let weightCorrected = correctWeightUnits(weight: weight, kg: wUnits)
+        
+        let mifflinResult = mifflin(sex: sex, weight: weightCorrected, height: heightCorrected, age: age)
         resultsController.myResults = mifflinResult
         
         
