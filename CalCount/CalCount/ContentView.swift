@@ -29,21 +29,31 @@ struct ContentView: View {
                     // NavigationView {
                     // VStack{
                     //   Text("Please Choose: ")
-                    NavigationLink(destination: EquationSelection()){
+                    NavigationLink(destination: EquationSelection(), label: {
                         Text("Manual Mode ")
-                    }
-                    NavigationLink(destination: EquationSelection()){
+                            .bold()
+                            .frame(width: 280, height: 50)
+                            .background(Color("Sage Green"))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(20)
+                    })
+                    NavigationLink(destination: EquationSelection(), label:{
                         Text("Guided Mode ")
-                    }
+                            .bold()
+                            .frame(width: 280, height: 50)
+                            .background(Color("Sage Green"))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(20)
+                    })
                     // }//end VStack/zstack
                 }//end NavigationView
                 
             }//end VStack
-                .frame(maxWidth: .infinity, // Full Screen Width
+           /*     .frame(maxWidth: .infinity, // Full Screen Width
                        maxHeight: .infinity, // Full Screen Height
                        alignment: .topLeading) // Align To top
                 .buttonStyle(.bordered)
-            }//end ZStack
+        */    }//end ZStack
         }//end body
         
         
