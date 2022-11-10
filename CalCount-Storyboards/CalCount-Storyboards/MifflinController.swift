@@ -12,25 +12,49 @@ class MifflinController: UIViewController {
     var height = 0.0
     var weight = 0.0
     var age = 0.0
+    var hUnits = false
+    var wUnits = true
     
     @IBOutlet weak var mifflinSexSelection: UISegmentedControl!
     
     @IBAction func mifflinSexSelection(_ sender: UISegmentedControl) {
         if mifflinSexSelection.selectedSegmentIndex == 0{
             sex = true
+            print("sex: ", sex)
         }
         else {
             sex = false
+            print("sex: ", sex)
         }
     }
     @IBOutlet weak var mifflinHeightField: UITextField!
     
     @IBOutlet weak var mifflinHeightUnitsSelection: UISegmentedControl!
     
+    @IBAction func mifflinHeightUnitsSelection(_ sender: UISegmentedControl) {
+        if mifflinHeightUnitsSelection.selectedSegmentIndex == 0{
+            hUnits = false
+            print("hUnits: ", hUnits)
+        }
+        else {
+            hUnits = true
+            print("hUnits: ", hUnits)
+        }
+    }
     @IBOutlet weak var mifflinWeightField: UITextField!
     
     @IBOutlet weak var mifflinWeightUnitsSelection: UISegmentedControl!
-    
+        
+    @IBAction func mifflinWeightUnitsSelection(_ sender: UISegmentedControl) {
+        if mifflinWeightUnitsSelection.selectedSegmentIndex == 0{
+            wUnits = true
+            print("wUnits: ", wUnits)
+        }
+        else {
+            wUnits = false
+            print("wUnits: ", wUnits)
+        }
+    }
     @IBOutlet weak var mifflinAgeField: UITextField!
     
     @IBAction func mifflinSubmit(_ sender: Any) {
@@ -46,15 +70,20 @@ class MifflinController: UIViewController {
         weight = Double(mifflinWeightField.text!) ?? 0.0
         age = Double(mifflinAgeField.text!) ?? 0.0
         
-        let mifflinResult = mifflin(sex: sex, weight: weight, height: height, age: age)
-        resultsController.myRMR = mifflinResult
+        let mifflinResult = mifflin(sex: sex, weight: weight, height: height, age: age, cm: hUnits, kg: wUnits)
+        resultsController.myResults = mifflinResult
         
         
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.hideKeyboardWhenTappedAround()
+        print("sex: ", sex)
+        print("height: ", height)
+        print("weight: ", weight)
+        print("age: ", age)
+        print("hUnits: ", hUnits)
+        print("wUnits: " ,wUnits)
     }
     
 

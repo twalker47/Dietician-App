@@ -256,7 +256,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="qOD-Vd-r4u"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                 <connections>
                                                     <action selector="mifflin_height_field:" destination="s0a-bW-JqR" eventType="editingDidEnd" id="pxk-2j-FuS"/>
                                                 </connections>
@@ -271,6 +271,9 @@
                                                     <segment title="in"/>
                                                     <segment title="cm"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="mifflinHeightUnitsSelection:" destination="2i7-VC-hJ8" eventType="valueChanged" id="cV9-x9-hSy"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5o-Iu-PO2">
                                                 <rect key="frame" x="96.666666666666686" y="327" width="200" height="30"/>
@@ -289,7 +292,7 @@
                                                     <constraint firstAttribute="height" constant="34" id="sJp-LS-VVT"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Cew-u1-LYT">
                                                 <rect key="frame" x="211.66666666666666" y="356.66666666666669" width="79.999999999999972" height="36"/>
@@ -301,6 +304,9 @@
                                                     <segment title="kg"/>
                                                     <segment title="lbs"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="mifflinWeightUnitsSelection:" destination="2i7-VC-hJ8" eventType="valueChanged" id="dVr-0T-V6D"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9K-UF-LVS">
                                                 <rect key="frame" x="96.666666666666686" y="411" width="200" height="30"/>
@@ -338,7 +344,7 @@
                                                     <constraint firstAttribute="width" constant="105" id="xdI-3l-cBh"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
                                         </subviews>
                                         <color key="backgroundColor" name="LightGray"/>
@@ -616,6 +622,11 @@
                     </view>
                     <navigationItem key="navigationItem" id="L7d-hU-yPm"/>
                     <connections>
+                        <outlet property="factor11" destination="MsQ-zT-vwU" id="Zhj-yF-s93"/>
+                        <outlet property="factor12" destination="3wf-NC-jNa" id="QTY-2q-fO2"/>
+                        <outlet property="factor13" destination="sXK-Z7-kJi" id="TT2-dC-ROQ"/>
+                        <outlet property="factor14" destination="PLO-Kc-ehr" id="V0a-Pr-y12"/>
+                        <outlet property="factor15" destination="yjK-gZ-K4h" id="ORC-m6-tfW"/>
                         <outlet property="rmr" destination="1we-fV-WXr" id="MW6-rC-C31"/>
                     </connections>
                 </viewController>
@@ -643,7 +654,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PQn-l4-Qp7"/>
         <segue reference="ewl-Xa-RJ3"/>
     </inferredMetricsTieBreakers>
     <resources>
