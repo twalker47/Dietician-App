@@ -37,22 +37,30 @@ struct MiffinStJeor: View {
             
             VStack{
                 Text("Mifflin-St. Jeor").padding()
+                    .bold()
+                    .frame(width: 250, height: 50)
+                    .background(Color("Sage Green"))
+                    .foregroundColor(Color.white)
+                    .cornerRadius(20)
+                
                 HStack{
-                    Text("Sex").padding()
+                    Text("Sex:").padding()
                     Button("Male") {
                         sex = true
                             
                     }
-                    .padding()
-                    .background(Color.white)
-                    .clipShape(Capsule())
+                    .frame(width: 75, height: 40)
+                    .background(Color("Sage Green"))
+                    .foregroundColor(Color.white)
+                    .cornerRadius(20)
                     Button("Female") {
                         sex = false
                         
                     }
-                    .padding()
-                    .background(Color.white)
-                    .clipShape(Capsule())
+                    .frame(width: 100, height: 40)
+                    .background(Color("Sage Green"))
+                    .foregroundColor(Color.white)
+                    .cornerRadius(20)
                 }
                 
                 HStack(alignment: .center){
@@ -64,7 +72,7 @@ struct MiffinStJeor: View {
                     TextField("Enter patient's height", value: $height, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
                 }.padding()
                 HStack(alignment: .center){
-                    Text("age: ")
+                    Text("Age: ")
                     TextField("Enter patient's age", value: $age, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
                 }.padding()
                 Button(action: {

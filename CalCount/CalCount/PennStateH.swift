@@ -34,23 +34,34 @@ struct PennStateH: View {
                 .font(.system(size: 30))
             
             VStack{
-                Text("Penn State for Hospitalized, non-ventilated patients").padding()
+                Text("Penn State").padding()
+                    .bold()
+                    .frame(width: 250, height: 50)
+                    .background(Color("Sage Green"))
+                    .foregroundColor(Color.white)
+                    .cornerRadius(20)
+                Text("(Hospitalized, non-ventilated patients)").padding()
+                    .foregroundColor(Color.gray)
+                    
                 HStack{
-                    Text("Sex").padding()
+                    Text("Sex:")
                     Button("Male") {
                         sex = true
-                            
                     }
-                    .padding()
-                    .background(Color.white)
-                    .clipShape(Capsule())
+                   // .padding()
+                    .frame(width: 75, height: 40)
+                    .background(Color("Sage Green"))
+                    .foregroundColor(Color.white)
+                    .cornerRadius(20)
                     Button("Female") {
                         sex = false
                         
                     }
-                    .padding()
-                    .background(Color.white)
-                    .clipShape(Capsule())
+                   // .padding()
+                        .frame(width: 100, height: 40)
+                        .background(Color("Sage Green"))
+                        .foregroundColor(Color.white)
+                        .cornerRadius(20)
                 }
                 
                 HStack(alignment: .center){
@@ -62,11 +73,11 @@ struct PennStateH: View {
                     TextField("Enter patient's height", value: $height, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
                 }.padding()
                 HStack(alignment: .center){
-                    Text("age: ")
+                    Text("Age: ")
                     TextField("Enter patient's age", value: $age, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
                 }.padding()
                 HStack(alignment: .center){
-                    Text("max temp: ")
+                    Text("Max Temp: ")
                     TextField("Enter patient's maximum temperature", value: $tMax, formatter: formatter).textFieldStyle(RoundedBorderTextFieldStyle()).keyboardType(.decimalPad)
                 }.padding()
                 Button(action: {
