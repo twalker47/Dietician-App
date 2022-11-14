@@ -16,7 +16,13 @@
 		BE32678A29197816006931EC /* CalCount_StoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32678929197816006931EC /* CalCount_StoryboardsTests.swift */; };
 		BE32679429197817006931EC /* CalCount_StoryboardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32679329197817006931EC /* CalCount_StoryboardsUITests.swift */; };
 		BE32679629197817006931EC /* CalCount_StoryboardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32679529197817006931EC /* CalCount_StoryboardsUITestsLaunchTests.swift */; };
+<<<<<<< Updated upstream
 		BED3AF7C291E122F009D2B54 /* equations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3AF7B291E122F009D2B54 /* equations.swift */; };
+=======
+		C17BD9B6291B63E90021E884 /* equations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17BD9B5291B63E90021E884 /* equations.swift */; };
+		C17BD9B8291B68D00021E884 /* MifflinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17BD9B7291B68D00021E884 /* MifflinController.swift */; };
+		C17BD9BA291B69730021E884 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17BD9B9291B69730021E884 /* ResultsController.swift */; };
+>>>>>>> Stashed changes
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +56,13 @@
 		BE32678F29197817006931EC /* CalCount-StoryboardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalCount-StoryboardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE32679329197817006931EC /* CalCount_StoryboardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCount_StoryboardsUITests.swift; sourceTree = "<group>"; };
 		BE32679529197817006931EC /* CalCount_StoryboardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCount_StoryboardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+<<<<<<< Updated upstream
 		BED3AF7B291E122F009D2B54 /* equations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = equations.swift; sourceTree = "<group>"; };
+=======
+		C17BD9B5291B63E90021E884 /* equations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = equations.swift; path = ../../CalCount/CalCount/equations.swift; sourceTree = "<group>"; };
+		C17BD9B7291B68D00021E884 /* MifflinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MifflinController.swift; sourceTree = "<group>"; };
+		C17BD9B9291B69730021E884 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
+>>>>>>> Stashed changes
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,10 +114,16 @@
 			isa = PBXGroup;
 			children = (
 				BE32677229197814006931EC /* AppDelegate.swift */,
+				C17BD9B5291B63E90021E884 /* equations.swift */,
 				BE32677429197814006931EC /* SceneDelegate.swift */,
 				BE32677629197814006931EC /* ViewController.swift */,
 				BE32677829197814006931EC /* Main.storyboard */,
+<<<<<<< Updated upstream
 				BED3AF7B291E122F009D2B54 /* equations.swift */,
+=======
+				C17BD9B9291B69730021E884 /* ResultsController.swift */,
+				C17BD9B7291B68D00021E884 /* MifflinController.swift */,
+>>>>>>> Stashed changes
 				BE32677B29197816006931EC /* Assets.xcassets */,
 				BE32677D29197816006931EC /* LaunchScreen.storyboard */,
 				BE32678029197816006931EC /* Info.plist */,
@@ -262,9 +280,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE32677729197814006931EC /* ViewController.swift in Sources */,
+				C17BD9B8291B68D00021E884 /* MifflinController.swift in Sources */,
+				C17BD9BA291B69730021E884 /* ResultsController.swift in Sources */,
 				BE32677329197814006931EC /* AppDelegate.swift in Sources */,
 				BE32677529197814006931EC /* SceneDelegate.swift in Sources */,
+<<<<<<< Updated upstream
 				BED3AF7C291E122F009D2B54 /* equations.swift in Sources */,
+=======
+				C17BD9B6291B63E90021E884 /* equations.swift in Sources */,
+>>>>>>> Stashed changes
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,15 +471,19 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+<<<<<<< Updated upstream
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+=======
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+>>>>>>> Stashed changes
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MyApp.CalCount-Storyboards";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyApp.CalCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -476,15 +504,19 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+<<<<<<< Updated upstream
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+=======
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+>>>>>>> Stashed changes
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.MyApp.CalCount-Storyboards";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MyApp.CalCount;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
