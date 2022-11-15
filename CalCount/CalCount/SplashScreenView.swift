@@ -24,9 +24,9 @@ struct SplashScreenView: View {
                 VStack {
                     Image(systemName: "hare.fill")
                         .font(.system(size: 80))
-                        .foregroundColor(.red)
+                        .foregroundColor(Color("Sage Green"))
                     Text("CalCount")
-                        .font(Font.custom("Baskerville-Bold", size: 26))
+                        .font(Font.custom("Baskerville-Bold", size: 50))
                         .foregroundColor(.black.opacity(0.80))
                 }
                 .scaleEffect(size)

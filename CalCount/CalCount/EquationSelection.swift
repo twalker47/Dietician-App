@@ -9,7 +9,7 @@ import SwiftUI
 
 struct EquationSelection: View {
     var body: some View {
-        NavigationView { //not sure if this should go here
+       // NavigationView { //not sure if this should go here
             
             ZStack {
                 Color.white
@@ -43,6 +43,15 @@ struct EquationSelection: View {
                             .cornerRadius(20)
                         
                     })
+                    NavigationLink(destination: PennStateTen(), label:{
+                        Text("Penn State Ten")
+                            .bold()
+                            .frame(width: 280, height: 50)
+                            .background(Color("Sage Green"))
+                            .foregroundColor(Color.white)
+                            .cornerRadius(20)
+                        
+                    })
                     // }//end VStack/zstack
                 }//end NavigationView
                 
@@ -51,7 +60,7 @@ struct EquationSelection: View {
              maxHeight: .infinity, // Full Screen Height
              alignment: .topLeading) // Align To top
              .buttonStyle(.bordered)
-             */   }//end ZStack
+             */ //  }//end nav view
     }//end body
     
     struct EquationSelection_Previews: PreviewProvider {
