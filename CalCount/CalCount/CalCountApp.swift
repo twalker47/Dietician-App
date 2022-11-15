@@ -11,11 +11,13 @@ import SwiftUI
 struct CalCountApp: App {
     var body: some Scene {
         WindowGroup {
-            SplashScreenView()
+            //SplashScreenView()
             //ContentView()
             //MiffinStJeor()
             //PennStateTen()
             //PennStateH()
+            //EquationSelection()
+            SplashScreenView()
         }
     }
 }

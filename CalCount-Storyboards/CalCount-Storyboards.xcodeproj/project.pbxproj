@@ -16,6 +16,9 @@
 		BE32678A29197816006931EC /* CalCount_StoryboardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32678929197816006931EC /* CalCount_StoryboardsTests.swift */; };
 		BE32679429197817006931EC /* CalCount_StoryboardsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32679329197817006931EC /* CalCount_StoryboardsUITests.swift */; };
 		BE32679629197817006931EC /* CalCount_StoryboardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32679529197817006931EC /* CalCount_StoryboardsUITestsLaunchTests.swift */; };
+		BED3AF7C291E122F009D2B54 /* equations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3AF7B291E122F009D2B54 /* equations.swift */; };
+		C1D4A21C2922FCCE006C4D43 /* MifflinController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4A21B2922FCCE006C4D43 /* MifflinController.swift */; };
+		C1D4A21E2922FCCF006C4D43 /* ResultsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1D4A21D2922FCCF006C4D43 /* ResultsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		BE32678F29197817006931EC /* CalCount-StoryboardsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CalCount-StoryboardsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE32679329197817006931EC /* CalCount_StoryboardsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCount_StoryboardsUITests.swift; sourceTree = "<group>"; };
 		BE32679529197817006931EC /* CalCount_StoryboardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCount_StoryboardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BED3AF7B291E122F009D2B54 /* equations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = equations.swift; sourceTree = "<group>"; };
+		C1D4A21B2922FCCE006C4D43 /* MifflinController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MifflinController.swift; sourceTree = "<group>"; };
+		C1D4A21D2922FCCF006C4D43 /* ResultsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,10 +105,13 @@
 		BE32677129197814006931EC /* CalCount-Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				C1D4A21D2922FCCF006C4D43 /* ResultsController.swift */,
+				C1D4A21B2922FCCE006C4D43 /* MifflinController.swift */,
 				BE32677229197814006931EC /* AppDelegate.swift */,
 				BE32677429197814006931EC /* SceneDelegate.swift */,
 				BE32677629197814006931EC /* ViewController.swift */,
 				BE32677829197814006931EC /* Main.storyboard */,
+				BED3AF7B291E122F009D2B54 /* equations.swift */,
 				BE32677B29197816006931EC /* Assets.xcassets */,
 				BE32677D29197816006931EC /* LaunchScreen.storyboard */,
 				BE32678029197816006931EC /* Info.plist */,
@@ -258,9 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C1D4A21E2922FCCF006C4D43 /* ResultsController.swift in Sources */,
 				BE32677729197814006931EC /* ViewController.swift in Sources */,
+				C1D4A21C2922FCCE006C4D43 /* MifflinController.swift in Sources */,
 				BE32677329197814006931EC /* AppDelegate.swift in Sources */,
 				BE32677529197814006931EC /* SceneDelegate.swift in Sources */,
+				BED3AF7C291E122F009D2B54 /* equations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,7 +449,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T25X4LCF23;
+				DEVELOPMENT_TEAM = 5SWPHYM43S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CalCount-Storyboards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -445,6 +457,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,7 +478,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T25X4LCF23;
+				DEVELOPMENT_TEAM = 5SWPHYM43S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CalCount-Storyboards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -473,6 +486,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
