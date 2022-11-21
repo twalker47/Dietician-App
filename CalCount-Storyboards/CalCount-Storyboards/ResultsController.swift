@@ -26,12 +26,12 @@ class ResultsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        rmr.text = String(round(myResults))
-        factor11.text = String(round(myResults * 1.1))
-        factor12.text = String(round(myResults * 1.2))
-        factor13.text = String(round(myResults * 1.3))
-        factor14.text = String(round(myResults * 1.4))
-        factor15.text = String(round(myResults * 1.5))
+        rmr.text = String(Int(round(myResults)))
+        factor11.text = String(Int(round(myResults * 1.1)))
+        factor12.text = String(Int(round(myResults * 1.2)))
+        factor13.text = String(Int(round(myResults * 1.3)))
+        factor14.text = String(Int(round(myResults * 1.4)))
+        factor15.text = String(Int(round(myResults * 1.5)))
         // Do any additional setup after loading the view.
     }
     
