@@ -67,7 +67,7 @@
                                                     <color key="baseForegroundColor" name="SageGreen"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="myI-pI-oQx" kind="show" id="3AY-dt-G6J"/>
+                                                    <segue destination="myI-pI-oQx" kind="show" id="UFn-4c-SaP"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0gD-0P-pda">
@@ -419,6 +419,7 @@
                     <connections>
                         <outlet property="mifflinAgeField" destination="yU6-oR-cf9" id="ryf-YV-AoD"/>
                         <outlet property="mifflinHeightField" destination="M0n-Tm-ubA" id="tyX-n2-vCG"/>
+                        <outlet property="mifflinHeightUnitsSelection" destination="pSo-Fr-n9l" id="P3e-ab-QGy"/>
                         <outlet property="mifflinSexSelection" destination="UUH-Ji-D6e" id="FZf-6G-Xa2"/>
                         <outlet property="mifflinWeightField" destination="1B1-a2-5d8" id="CVd-cO-aTR"/>
                         <outlet property="mifflinWeightUnitsSelection" destination="Cew-u1-LYT" id="EpM-2P-siG"/>
@@ -432,7 +433,7 @@
         <!--Harris-Benedict-->
         <scene sceneID="Kfx-bs-9Qi">
             <objects>
-                <viewController id="myI-pI-oQx" userLabel="Harris-Benedict" sceneMemberID="viewController">
+                <viewController id="myI-pI-oQx" userLabel="Harris-Benedict" customClass="HarrisController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n5q-lu-Plt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -483,6 +484,9 @@
                                                     <segment title="M"/>
                                                     <segment title="F"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="harrisSexSelection:" destination="myI-pI-oQx" eventType="valueChanged" id="gE0-R7-F61"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3D-XS-SWx">
                                                 <rect key="frame" x="96.666666666666686" y="233" width="200" height="30"/>
@@ -513,6 +517,9 @@
                                                     <segment title="in"/>
                                                     <segment title="cm"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="harrisHeightsUnitSelection:" destination="myI-pI-oQx" eventType="valueChanged" id="T9P-YO-jiG"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SlS-r4-Rxo">
                                                 <rect key="frame" x="96.666666666666686" y="317" width="200" height="30"/>
@@ -543,6 +550,9 @@
                                                     <segment title="kg"/>
                                                     <segment title="lbs"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="harrisWeightUnitsSelection:" destination="myI-pI-oQx" eventType="valueChanged" id="tZL-BW-sAY"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvX-Ur-Gzv">
                                                 <rect key="frame" x="96.666666666666686" y="401" width="200" height="30"/>
@@ -569,7 +579,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="fTA-oE-39E" kind="show" id="ydw-Gr-Ev5"/>
+                                                    <action selector="harrisSubmit:" destination="myI-pI-oQx" eventType="touchUpInside" id="dse-2u-Fjn"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter value..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8f5-kc-h2A">
@@ -638,10 +648,18 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="imb-V5-vzh"/>
+                    <connections>
+                        <outlet property="harrisAgeField" destination="8f5-kc-h2A" id="zFm-vX-bla"/>
+                        <outlet property="harrisHeightField" destination="PaL-ng-WL8" id="UGS-je-4YW"/>
+                        <outlet property="harrisHeightsUnitSelection" destination="x5G-ER-Qc6" id="60M-3e-HMk"/>
+                        <outlet property="harrisSexSelection" destination="te1-en-ank" id="FPy-fI-isH"/>
+                        <outlet property="harrisWeightField" destination="Wsj-Hn-4ud" id="wPI-Yf-zwh"/>
+                        <segue destination="fTA-oE-39E" kind="show" identifier="harrisResultsSegue" id="Z40-2Z-xRc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3z5-O3-4gU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2181" y="-776"/>
+            <point key="canvasLocation" x="2181" y="-761"/>
         </scene>
         <!--Calorie Calc Results-->
         <scene sceneID="SUf-2f-moj">
@@ -1886,7 +1904,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="VLe-Y9-ZtK"/>
+        <segue reference="Z40-2Z-xRc"/>
         <segue reference="RgX-Gr-6H9"/>
     </inferredMetricsTieBreakers>
     <resources>
