@@ -1107,7 +1107,7 @@
         <!--Penn State (2003b)-->
         <scene sceneID="Hue-2G-ujI">
             <objects>
-                <viewController id="CKb-id-sdK" userLabel="Penn State (2003b)" sceneMemberID="viewController">
+                <viewController id="CKb-id-sdK" userLabel="Penn State (2003b)" customClass="PennState2003Controller" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rFK-lF-Imj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1158,6 +1158,9 @@
                                                     <segment title="M"/>
                                                     <segment title="F"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="PennState2003SexSelection:" destination="CKb-id-sdK" eventType="valueChanged" id="k2O-g4-XUp"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NvW-bw-AuM">
                                                 <rect key="frame" x="96.666666666666686" y="233" width="200" height="30"/>
@@ -1188,6 +1191,9 @@
                                                     <segment title="in"/>
                                                     <segment title="cm"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="PennState2003HeightUnitsSelection:" destination="CKb-id-sdK" eventType="valueChanged" id="0xF-lo-xHc"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHi-Tl-hX2">
                                                 <rect key="frame" x="96.666666666666686" y="317" width="200" height="30"/>
@@ -1218,6 +1224,9 @@
                                                     <segment title="kg"/>
                                                     <segment title="lbs"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="PennState2003WeightUnitsSelection:" destination="CKb-id-sdK" eventType="valueChanged" id="qku-fu-GWA"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w1G-Vv-4yb">
                                                 <rect key="frame" x="96.666666666666686" y="401" width="200" height="30"/>
@@ -1229,15 +1238,6 @@
                                                 <color key="textColor" name="DarkGray"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter value..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1KE-F0-Rdx">
-                                                <rect key="frame" x="96.666666666666686" y="431" width="105" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="l39-Da-Rkh"/>
-                                                    <constraint firstAttribute="width" constant="105" id="xjR-yw-ezp"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                            </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Max Temperature (C°)" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hox-qe-Saf">
                                                 <rect key="frame" x="96.666666666666686" y="485" width="200" height="30"/>
                                                 <constraints>
@@ -1295,9 +1295,18 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="fTA-oE-39E" kind="show" id="UWE-Ry-tUL"/>
+                                                    <action selector="PennState2003Submit:" destination="CKb-id-sdK" eventType="touchUpInside" id="0sd-KO-H1D"/>
                                                 </connections>
                                             </button>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter value..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1KE-F0-Rdx">
+                                                <rect key="frame" x="96.666666666666686" y="431" width="105" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="l39-Da-Rkh"/>
+                                                    <constraint firstAttribute="width" constant="105" id="xjR-yw-ezp"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" name="LightGray"/>
                                         <constraints>
@@ -1363,6 +1372,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="vNt-dc-c7w"/>
+                    <connections>
+                        <outlet property="PennState2003AgeField" destination="1KE-F0-Rdx" id="AGi-AY-0TG"/>
+                        <outlet property="PennState2003HeightField" destination="9Oq-7W-GNl" id="N9Z-Sv-2Kc"/>
+                        <outlet property="PennState2003HeightUnitsSelection" destination="flA-u3-JqA" id="hkE-Fm-Q6I"/>
+                        <outlet property="PennState2003SexSelection" destination="S11-FO-pP2" id="q86-Un-TEf"/>
+                        <outlet property="PennState2003WeightField" destination="4uG-oS-EUb" id="eeO-LG-LjV"/>
+                        <outlet property="PennState2003WeightUnitsSelection" destination="dGY-J2-Orf" id="2LY-H7-Bce"/>
+                        <outlet property="PennState2003tMaxField" destination="nCw-vm-1RB" id="hJ0-Ku-qF3"/>
+                        <outlet property="PennState2003vexField" destination="xoK-17-BH8" id="7DT-7g-jED"/>
+                        <segue destination="fTA-oE-39E" kind="show" identifier="PennState2003ResultsSegue" id="DuH-yV-6iA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5sy-Kq-2f0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1898,8 +1918,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UFn-4c-SaP"/>
-        <segue reference="Z40-2Z-xRc"/>
+        <segue reference="DuH-yV-6iA"/>
         <segue reference="RgX-Gr-6H9"/>
     </inferredMetricsTieBreakers>
     <resources>
