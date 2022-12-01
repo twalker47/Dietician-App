@@ -39,12 +39,11 @@
                                                     <constraint firstAttribute="width" constant="298" id="eS8-xo-Klh"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Mifflin St. Jeor" subtitle="For healthy, non-hospitalized individuals.">
+                                                <buttonConfiguration key="configuration" style="plain" title="Mifflin St. Jeor">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" name="WhiteButtons"/>
                                                     </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="26"/>
                                                     <color key="baseForegroundColor" name="SageGreen"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -58,12 +57,11 @@
                                                     <constraint firstAttribute="width" constant="298" id="HuO-EC-4am"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Harris-Benedict" subtitle="For healthy, non-hospitalized individuals.">
+                                                <buttonConfiguration key="configuration" style="plain" title="Harris-Benedict">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" name="WhiteButtons"/>
                                                     </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="26"/>
                                                     <color key="baseForegroundColor" name="SageGreen"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -77,12 +75,11 @@
                                                     <constraint firstAttribute="height" constant="140" id="CZg-5f-XnU"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Livingston" subtitle="For healthy, non-hospitalized individuals.">
+                                                <buttonConfiguration key="configuration" style="plain" title="Livingston">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" name="WhiteButtons"/>
                                                     </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="26"/>
                                                     <color key="baseForegroundColor" name="SageGreen"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -96,12 +93,11 @@
                                                     <constraint firstAttribute="height" constant="140" id="DUn-9e-0Gp"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Penn State (2003b)" subtitle="For healthy, non-hospitalized individuals.">
+                                                <buttonConfiguration key="configuration" style="plain" title="Penn State (2003b)">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" name="WhiteButtons"/>
                                                     </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="26"/>
                                                     <color key="baseForegroundColor" name="SageGreen"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -115,12 +111,11 @@
                                                     <constraint firstAttribute="width" constant="298" id="foX-CS-DYi"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Penn State (2010)" subtitle="For healthy, non-hospitalized individuals.">
+                                                <buttonConfiguration key="configuration" style="plain" title="Penn State (2010)">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" name="WhiteButtons"/>
                                                     </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="26"/>
                                                     <color key="baseForegroundColor" name="SageGreen"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -136,12 +131,11 @@
                                                     <constraint firstAttribute="height" constant="140" id="oYf-a2-uvY"/>
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Penn State H" subtitle="For healthy, non-hospitalized individuals.">
+                                                <buttonConfiguration key="configuration" style="plain" title="Penn State H">
                                                     <backgroundConfiguration key="background">
                                                         <color key="backgroundColor" name="WhiteButtons"/>
                                                     </backgroundConfiguration>
-                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="22"/>
-                                                    <fontDescription key="subtitleFontDescription" type="system" pointSize="18"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="26"/>
                                                     <color key="baseForegroundColor" name="SageGreen"/>
                                                 </buttonConfiguration>
                                                 <connections>
@@ -1904,6 +1898,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="UFn-4c-SaP"/>
         <segue reference="Z40-2Z-xRc"/>
         <segue reference="RgX-Gr-6H9"/>
     </inferredMetricsTieBreakers>
