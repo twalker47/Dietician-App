@@ -15,7 +15,7 @@ class PennStateHControllerViewController: UIViewController {
     var hUnits = false
     var wUnits = true
     var tMax = 0.0
-    var vex = 0.0
+    
     
     @IBOutlet weak var pennStateHSexSelection: UISegmentedControl!
     
@@ -75,16 +75,14 @@ class PennStateHControllerViewController: UIViewController {
     @IBOutlet weak var pennStateHMaxTempField: UITextField!
     
     
-    @IBOutlet weak var pennStateHExpiredMinuteField: UITextField!
-    
+      
     
     
     @IBAction func pennStateHSubmit(_ sender: Any) {
         if pennStateHHeightField.text != "" &&
             pennStateHWeightField.text != "" &&
             pennStateHAgeField.text != "" &&
-            pennStateHMaxTempField.text != "" &&
-            pennStateHExpiredMinuteField.text != "" {
+            pennStateHMaxTempField.text != "" {
             performSegue(withIdentifier: "PennStateHResultsSegue", sender: self)
         }
     }
@@ -93,21 +91,14 @@ class PennStateHControllerViewController: UIViewController {
         let resultsController = segue.destination as!
             ResultsController
         
-        height = Double(pennStateHHeightField.text!) ??
-            0.0
-        weight = Double(pennStateHWeightField.text!) ??
-            0.0
-        age = Double(pennStateHAgeField.text!) ??
-            0.0
-        tMax = Double(pennStateHMaxTempField.text!) ??
-            0.00
-        vex = Double(pennStateHExpiredMinuteField.text!) ??
-            0.0
+        height = Double(pennStateHHeightField.text!) ?? 0.0
+        weight = Double(pennStateHWeightField.text!) ?? 0.0
+        age = Double(pennStateHAgeField.text!) ?? 0.0
+        tMax = Double(pennStateHMaxTempField.text!) ?? 0.00
+
         
-        let heightCorrected =
-            correctHeightUnits(height: height, cm: hUnits)
-        let weightCorrected =
-            correctWeightUnits(weight: weight, kg: wUnits)
+        let heightCorrected = correctHeightUnits(height: height, cm: hUnits)
+        let weightCorrected = correctWeightUnits(weight: weight, kg: wUnits)
         let pennStateHResult = pennStateH(sex: sex, weight: weightCorrected, height: heightCorrected, age: age, tMax: tMax)
         resultsController.myResults = pennStateHResult
     }
