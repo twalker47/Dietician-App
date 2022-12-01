@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3ACC85B2293923A000E342B1 /* PennState2010ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACC85B1293923A000E342B1 /* PennState2010ControllerViewController.swift */; };
 		BE32677329197814006931EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32677229197814006931EC /* AppDelegate.swift */; };
 		BE32677529197814006931EC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32677429197814006931EC /* SceneDelegate.swift */; };
 		BE32677729197814006931EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32677629197814006931EC /* ViewController.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3ACC85B1293923A000E342B1 /* PennState2010ControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennState2010ControllerViewController.swift; sourceTree = "<group>"; };
 		BE32676F29197814006931EC /* CalCount-Storyboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalCount-Storyboards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE32677229197814006931EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE32677429197814006931EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				C1D4A21D2922FCCF006C4D43 /* ResultsController.swift */,
 				C1D4A21B2922FCCE006C4D43 /* MifflinController.swift */,
+				3ACC85B1293923A000E342B1 /* PennState2010ControllerViewController.swift */,
 				BE32677229197814006931EC /* AppDelegate.swift */,
 				BE32677429197814006931EC /* SceneDelegate.swift */,
 				BE32677629197814006931EC /* ViewController.swift */,
@@ -276,6 +279,7 @@
 				C1D4A21C2922FCCE006C4D43 /* MifflinController.swift in Sources */,
 				BE32677329197814006931EC /* AppDelegate.swift in Sources */,
 				BE32677529197814006931EC /* SceneDelegate.swift in Sources */,
+				3ACC85B2293923A000E342B1 /* PennState2010ControllerViewController.swift in Sources */,
 				BED3AF7C291E122F009D2B54 /* equations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

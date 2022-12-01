@@ -1371,16 +1371,16 @@
         <!--Penn State (2010)-->
         <scene sceneID="UwP-mP-JyL">
             <objects>
-                <viewController id="ZUz-7y-sZM" userLabel="Penn State (2010)" sceneMemberID="viewController">
+                <viewController id="ZUz-7y-sZM" userLabel="Penn State (2010)" customClass="PennState2010ControllerViewController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DYl-GS-Nme">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iya-He-C2L">
-                                <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iya-He-C2L">
+                                <rect key="frame" x="-63" y="0.0" width="393" height="783"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W9q-5D-o80" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W9q-5D-o80" userLabel="ContentView">
+                                        <rect key="frame" x="63" y="-11" width="393" height="783"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Penn State (2010)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcb-dy-vN7" userLabel="Penn State (2003b)">
                                                 <rect key="frame" x="63" y="8" width="267" height="32"/>
@@ -1422,6 +1422,9 @@
                                                     <segment title="M"/>
                                                     <segment title="F"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="PennState2010SexSelection:" destination="ZUz-7y-sZM" eventType="valueChanged" id="Ssj-An-JEf"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Us-Ij-fxf">
                                                 <rect key="frame" x="96.666666666666686" y="233" width="200" height="30"/>
@@ -1452,6 +1455,9 @@
                                                     <segment title="in"/>
                                                     <segment title="cm"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="PennState2010HeightField:" destination="ZUz-7y-sZM" eventType="valueChanged" id="UOU-ep-g2T"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2G6-eM-dCt">
                                                 <rect key="frame" x="96.666666666666686" y="317" width="200" height="30"/>
@@ -1482,6 +1488,9 @@
                                                     <segment title="kg"/>
                                                     <segment title="lbs"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="PennState2010WeightUnitsSelection:" destination="ZUz-7y-sZM" eventType="valueChanged" id="5sg-73-fwC"/>
+                                                </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha6-MA-0bb">
                                                 <rect key="frame" x="96.666666666666686" y="401" width="200" height="30"/>
@@ -1559,7 +1568,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="fTA-oE-39E" kind="show" id="xIb-0k-zTL"/>
+                                                    <action selector="PennState2010Submit:" destination="ZUz-7y-sZM" eventType="touchUpInside" id="r8J-fP-3II"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -1627,6 +1636,17 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hOk-A8-rid"/>
+                    <connections>
+                        <outlet property="PennState2010AgeField" destination="jH2-s7-Bcy" id="TXo-yx-mFG"/>
+                        <outlet property="PennState2010ExpiredMinuteVentField" destination="bJl-L9-6hQ" id="HKG-CD-kB2"/>
+                        <outlet property="PennState2010HeightField" destination="NUQ-C4-Rif" id="Vuf-Qe-qdm"/>
+                        <outlet property="PennState2010HeightUnitsSelection" destination="EqJ-pB-8Zd" id="lyc-2x-u5s"/>
+                        <outlet property="PennState2010MaxTemperatureField" destination="U4R-CM-pPy" id="oNf-cW-1wK"/>
+                        <outlet property="PennState2010SexSelection" destination="xot-Ee-pUL" id="CMM-xC-zOw"/>
+                        <outlet property="PennState2010WeightField" destination="yhQ-Lp-A29" id="TYH-0r-mqS"/>
+                        <outlet property="PennState2010WeightUnitsSelection" destination="DeO-eL-S5l" id="S47-ZF-t9K"/>
+                        <segue destination="fTA-oE-39E" kind="show" identifier="PennState2010ResultSegue" id="BrP-QJ-kL2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DGh-ZF-B9I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1898,8 +1918,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="UFn-4c-SaP"/>
-        <segue reference="Z40-2Z-xRc"/>
+        <segue reference="BrP-QJ-kL2"/>
         <segue reference="RgX-Gr-6H9"/>
     </inferredMetricsTieBreakers>
     <resources>
