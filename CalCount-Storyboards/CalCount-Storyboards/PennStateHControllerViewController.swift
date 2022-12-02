@@ -36,15 +36,11 @@ class PennStateHControllerViewController: UIViewController {
     
     
     @IBAction func pennStateHHeightUnitsSelection(_ sender: UISegmentedControl) {
-        if
-            pennStateHHeightUnitsSelection
-                .selectedSegmentIndex == 0{
+        if pennStateHHeightUnitsSelection.selectedSegmentIndex == 0{
             hUnits = false
-            print("hUnits: ", hUnits)
         }
         else{
             hUnits = true
-            print("hUnits: ", hUnits)
         }
     }
     
@@ -56,15 +52,11 @@ class PennStateHControllerViewController: UIViewController {
     
     
     @IBAction func pennStateHWeightUnitsSelection(_ sender: UISegmentedControl) {
-        if
-            pennStateHWeightUnitsSelection
-                .selectedSegmentIndex == 0{
+        if pennStateHWeightUnitsSelection.selectedSegmentIndex == 0{
             wUnits = true
-            print("wUnits: ", wUnits)
         }
         else{
             wUnits = false
-            print("wUnits: ", wUnits)
         }
     }
     

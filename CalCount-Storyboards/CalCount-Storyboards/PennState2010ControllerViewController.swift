@@ -57,9 +57,7 @@ class PennState2010ControllerViewController: UIViewController {
     @IBOutlet weak var PennState2010ExpiredMinuteVentField: UITextField!
     
     @IBAction func PennState2010Submit(_ sender: Any) {
-        if PennState2010HeightField.text != "" &&
-            PennState2010WeightField.text != "" &&
-            PennState2010AgeField.text != "" {
+        if PennState2010HeightField.text != "" && PennState2010WeightField.text != "" && PennState2010AgeField.text != "" && PennState2010MaxTemperatureField.text != "" && PennState2010ExpiredMinuteVentField.text != ""{
             performSegue(withIdentifier: "PennState2010ResultsSegue", sender: self)
         }
     }

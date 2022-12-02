@@ -11,7 +11,7 @@
         <!--Equation Selection-->
         <scene sceneID="fXK-sx-HON">
             <objects>
-                <viewController id="eua-Zx-VQw" userLabel="Equation Selection" sceneMemberID="viewController">
+                <viewController id="eua-Zx-VQw" userLabel="Equation Selection" customClass="ViewController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5r7-jJ-7T7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1150"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -816,7 +816,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="eua-Zx-VQw" kind="show" id="RgX-Gr-6H9"/>
+                                    <action selector="startOverButton:" destination="fTA-oE-39E" eventType="touchUpInside" id="l9a-cS-boT"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -855,6 +855,7 @@
                             <constraint firstItem="M0b-37-bbo" firstAttribute="top" secondItem="KFx-wx-D0v" secondAttribute="top" id="nnA-Pa-qpi"/>
                             <constraint firstItem="Cbp-n7-mcz" firstAttribute="top" secondItem="jzc-CI-WY3" secondAttribute="bottom" constant="147" id="yIX-KG-flN"/>
                             <constraint firstItem="3wf-NC-jNa" firstAttribute="centerX" secondItem="MsQ-zT-vwU" secondAttribute="centerX" id="yoa-6O-H4s"/>
+                            <constraint firstItem="Cbp-n7-mcz" firstAttribute="centerX" secondItem="KFx-wx-D0v" secondAttribute="centerX" id="zeb-Mu-B6e"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="L7d-hU-yPm"/>
@@ -865,9 +866,11 @@
                         <outlet property="factor14" destination="PLO-Kc-ehr" id="exg-dQ-b4c"/>
                         <outlet property="factor15" destination="yjK-gZ-K4h" id="4Y7-xs-i74"/>
                         <outlet property="rmr" destination="1we-fV-WXr" id="vYe-Iu-DJS"/>
+                        <segue destination="zS3-R0-3RO" kind="unwind" identifier="unwindToEquationsSelection" unwindAction="unwind:" id="9bM-X7-Ndu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O8i-ty-897" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zS3-R0-3RO" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="4240" y="-37"/>
         </scene>
@@ -893,7 +896,7 @@
         <!--Livingston-->
         <scene sceneID="xww-KY-34E">
             <objects>
-                <viewController id="F2E-Qa-RrP" userLabel="Livingston" sceneMemberID="viewController">
+                <viewController id="F2E-Qa-RrP" userLabel="Livingston" customClass="LivingstonController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bs8-lG-Gli">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -902,7 +905,7 @@
                                 <rect key="frame" x="0.0" y="44" width="393" height="774"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfk-Ge-7Mc" userLabel="ContentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="773"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="774"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Livingston" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="306-g9-TdY">
                                                 <rect key="frame" x="63" y="8" width="267" height="32"/>
@@ -944,8 +947,11 @@
                                                     <segment title="M"/>
                                                     <segment title="F"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="LivingstonSexSelection:" destination="F2E-Qa-RrP" eventType="valueChanged" id="pip-XB-N51"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGi-GL-Xl8">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGi-GL-Xl8">
                                                 <rect key="frame" x="96.666666666666686" y="233" width="200" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="200" id="HTj-E2-lzm"/>
@@ -971,11 +977,14 @@
                                                     <constraint firstAttribute="width" constant="80" id="j1g-5H-Z1z"/>
                                                 </constraints>
                                                 <segments>
-                                                    <segment title="in"/>
-                                                    <segment title="cm"/>
+                                                    <segment title="kg"/>
+                                                    <segment title="lb"/>
                                                 </segments>
+                                                <connections>
+                                                    <action selector="LivingstonWeightUnitsSelection:" destination="F2E-Qa-RrP" eventType="valueChanged" id="oqC-oc-LN8"/>
+                                                </connections>
                                             </segmentedControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weight" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djq-lF-Dnd">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Djq-lF-Dnd">
                                                 <rect key="frame" x="96.666666666666686" y="317" width="200" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="f1C-IW-4dm"/>
@@ -994,29 +1003,8 @@
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                             </textField>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="a0l-wd-pFy">
-                                                <rect key="frame" x="211.66666666666666" y="346.66666666666669" width="79.999999999999972" height="36"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="35" id="Clj-Jn-TXd"/>
-                                                    <constraint firstAttribute="width" constant="80" id="S8h-hY-1lk"/>
-                                                </constraints>
-                                                <segments>
-                                                    <segment title="kg"/>
-                                                    <segment title="lbs"/>
-                                                </segments>
-                                            </segmentedControl>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qGT-TQ-h3s">
-                                                <rect key="frame" x="96.666666666666686" y="401" width="200" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="200" id="L9j-HW-0Qg"/>
-                                                    <constraint firstAttribute="height" constant="30" id="el0-Rh-R04"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                                <color key="textColor" name="DarkGray"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4VE-xg-T3y">
-                                                <rect key="frame" x="92.666666666666686" y="608" width="208" height="78"/>
+                                                <rect key="frame" x="92.666666666666686" y="609" width="208" height="78"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="208" id="Wjm-zY-gg0"/>
                                                     <constraint firstAttribute="height" constant="78" id="u6O-Ts-RmN"/>
@@ -1030,37 +1018,22 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="fTA-oE-39E" kind="show" id="ZLj-Qh-ar2"/>
+                                                    <action selector="livingstonSubmit:" destination="F2E-Qa-RrP" eventType="touchUpInside" id="vXQ-xn-3oH"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter value..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X2T-Zg-cbo">
-                                                <rect key="frame" x="96.666666666666686" y="431" width="105" height="34"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="34" id="6N9-Qx-Kht"/>
-                                                    <constraint firstAttribute="width" constant="105" id="ff0-CV-2VP"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                                            </textField>
                                         </subviews>
                                         <color key="backgroundColor" name="LightGray"/>
                                         <constraints>
                                             <constraint firstItem="RqI-hr-9Qz" firstAttribute="top" secondItem="fc4-nP-Rwd" secondAttribute="bottom" id="0RL-pX-veU"/>
                                             <constraint firstItem="306-g9-TdY" firstAttribute="top" secondItem="kfk-Ge-7Mc" secondAttribute="top" constant="8" id="0eu-41-yJI"/>
-                                            <constraint firstItem="X2T-Zg-cbo" firstAttribute="top" secondItem="qGT-TQ-h3s" secondAttribute="bottom" id="89a-a6-ING"/>
                                             <constraint firstItem="cvH-6U-Scd" firstAttribute="leading" secondItem="LGi-GL-Xl8" secondAttribute="leading" id="960-bW-bYK"/>
                                             <constraint firstItem="YVd-Ga-bX5" firstAttribute="leading" secondItem="Djq-lF-Dnd" secondAttribute="leading" id="Aix-dZ-mI3"/>
-                                            <constraint firstItem="X2T-Zg-cbo" firstAttribute="leading" secondItem="qGT-TQ-h3s" secondAttribute="leading" id="F9o-Kc-v8I"/>
                                             <constraint firstItem="Djq-lF-Dnd" firstAttribute="leading" secondItem="cvH-6U-Scd" secondAttribute="leading" id="FKd-xR-vYq"/>
                                             <constraint firstItem="Djq-lF-Dnd" firstAttribute="top" secondItem="cvH-6U-Scd" secondAttribute="bottom" constant="20" id="I3N-Ta-Rwu"/>
-                                            <constraint firstItem="qGT-TQ-h3s" firstAttribute="top" secondItem="YVd-Ga-bX5" secondAttribute="bottom" constant="20" id="LN9-2O-yR6"/>
-                                            <constraint firstItem="qGT-TQ-h3s" firstAttribute="leading" secondItem="YVd-Ga-bX5" secondAttribute="leading" id="LYz-rM-eM8"/>
                                             <constraint firstAttribute="bottom" secondItem="4VE-xg-T3y" secondAttribute="bottom" constant="87" id="M4b-5n-60Z"/>
                                             <constraint firstItem="fc4-nP-Rwd" firstAttribute="centerX" secondItem="kfk-Ge-7Mc" secondAttribute="centerX" id="Pac-Ez-w9M"/>
-                                            <constraint firstItem="a0l-wd-pFy" firstAttribute="centerY" secondItem="YVd-Ga-bX5" secondAttribute="centerY" id="Pt6-Ii-E0f"/>
                                             <constraint firstItem="mK1-7r-Tc8" firstAttribute="top" secondItem="306-g9-TdY" secondAttribute="bottom" constant="8" symbolic="YES" id="S52-Ho-Sua"/>
                                             <constraint firstItem="6qa-x0-cqZ" firstAttribute="centerY" secondItem="cvH-6U-Scd" secondAttribute="centerY" id="Sem-uo-8oy"/>
-                                            <constraint firstItem="a0l-wd-pFy" firstAttribute="leading" secondItem="YVd-Ga-bX5" secondAttribute="trailing" constant="10" id="TQh-fx-qIy"/>
                                             <constraint firstItem="cvH-6U-Scd" firstAttribute="top" secondItem="LGi-GL-Xl8" secondAttribute="bottom" id="Uvr-Ey-5Cl"/>
                                             <constraint firstItem="RqI-hr-9Qz" firstAttribute="leading" secondItem="fc4-nP-Rwd" secondAttribute="leading" id="Vfz-JC-AaE"/>
                                             <constraint firstItem="LGi-GL-Xl8" firstAttribute="top" secondItem="RqI-hr-9Qz" secondAttribute="bottom" constant="20" id="aSQ-Z6-rIn"/>
@@ -1070,7 +1043,6 @@
                                             <constraint firstItem="306-g9-TdY" firstAttribute="centerX" secondItem="kfk-Ge-7Mc" secondAttribute="centerX" id="p9V-41-USh"/>
                                             <constraint firstItem="mK1-7r-Tc8" firstAttribute="centerX" secondItem="kfk-Ge-7Mc" secondAttribute="centerX" id="tgC-rQ-1fh"/>
                                             <constraint firstItem="YVd-Ga-bX5" firstAttribute="top" secondItem="Djq-lF-Dnd" secondAttribute="bottom" id="yE1-PC-C5J"/>
-                                            <constraint firstItem="4VE-xg-T3y" firstAttribute="top" secondItem="X2T-Zg-cbo" secondAttribute="bottom" constant="143" id="yp0-pd-NM3"/>
                                             <constraint firstItem="LGi-GL-Xl8" firstAttribute="leading" secondItem="RqI-hr-9Qz" secondAttribute="leading" id="zfH-O5-F95"/>
                                         </constraints>
                                     </view>
@@ -1099,6 +1071,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="AU9-8d-XgZ"/>
+                    <connections>
+                        <outlet property="LivingstonAgeField" destination="YVd-Ga-bX5" id="Yf9-hR-f2F"/>
+                        <outlet property="LivingstonSexSelection" destination="RqI-hr-9Qz" id="6LU-QD-gc3"/>
+                        <outlet property="LivingstonWeightField" destination="cvH-6U-Scd" id="Ii1-eY-6rr"/>
+                        <outlet property="LivingstonWeightUnitsSelection" destination="6qa-x0-cqZ" id="p2K-QF-PaI"/>
+                        <segue destination="fTA-oE-39E" kind="show" identifier="LivingstonResultsSegue" id="hqv-TL-ada"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q2V-Nn-OXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1932,8 +1911,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="2x5-RA-lLh"/>
-        <segue reference="KaP-fy-hb6"/>
+        <segue reference="hqv-TL-ada"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">

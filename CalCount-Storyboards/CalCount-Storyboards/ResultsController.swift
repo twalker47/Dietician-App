@@ -23,6 +23,11 @@ class ResultsController: UIViewController {
     
     @IBOutlet weak var factor15: UILabel!
     
+    @IBAction func startOverButton(_ sender: Any) {
+        print("unwind function called")
+        performSegue(withIdentifier: "unwindToEquationsSelection", sender: self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
