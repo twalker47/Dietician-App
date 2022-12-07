@@ -1932,7 +1932,7 @@
         <!--kcal/kg-->
         <scene sceneID="oqK-2o-03W">
             <objects>
-                <viewController id="zEv-RD-PFa" userLabel="kcal/kg" customClass="MifflinController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zEv-RD-PFa" userLabel="kcal/kg" customClass="KCalController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nru-DP-Mvh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1993,7 +1993,7 @@
                                                     <segment title="lbs"/>
                                                 </segments>
                                                 <connections>
-                                                    <action selector="mifflinWeightUnitsSelection:" destination="zEv-RD-PFa" eventType="valueChanged" id="I0g-Id-2k7"/>
+                                                    <action selector="kCalWeightUnitsSelection:" destination="zEv-RD-PFa" eventType="valueChanged" id="byt-qw-eOP"/>
                                                 </connections>
                                             </segmentedControl>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calories per Kilogram" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAX-kL-qC8">
@@ -2021,8 +2021,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <action selector="mifflinSubmit:" destination="zEv-RD-PFa" eventType="touchUpInside" id="b4W-8s-JXp"/>
-                                                    <segue destination="fTA-oE-39E" kind="show" id="diU-RE-V4a"/>
+                                                    <action selector="kCalSubmit:" destination="zEv-RD-PFa" eventType="touchUpInside" id="Pvk-DX-QCq"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter value..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6jF-UQ-mQe">
@@ -2082,9 +2081,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="m5C-YY-GU1"/>
                     <connections>
-                        <outlet property="mifflinAgeField" destination="6jF-UQ-mQe" id="wwo-Or-FpM"/>
-                        <outlet property="mifflinWeightField" destination="ozm-h9-6uc" id="3lm-UB-LtI"/>
-                        <outlet property="mifflinWeightUnitsSelection" destination="Sxk-SM-Uix" id="PwP-Kx-Zvy"/>
+                        <outlet property="kCalFactorField" destination="6jF-UQ-mQe" id="hTR-oW-37c"/>
+                        <outlet property="kCalWeightField" destination="ozm-h9-6uc" id="k8F-nN-c1n"/>
+                        <outlet property="kCalWeightUnitsSelection" destination="Sxk-SM-Uix" id="QNL-aH-Xuu"/>
+                        <segue destination="fTA-oE-39E" kind="show" identifier="kCalResultsSegue" id="C6j-IN-Llt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSD-S2-XEZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2093,7 +2093,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="diU-RE-V4a"/>
+        <segue reference="C6j-IN-Llt"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">

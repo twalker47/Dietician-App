@@ -38,7 +38,7 @@ func mifflin(sex: Bool, weight: Double, height: Double, age: Double) -> Double {
 
 func harris(sex: Bool, weight: Double, height: Double, age: Double) -> Double {
     if (sex==true) {
-        let result = 655.1 + 9.53 * weight + 1.85 * height - 4.676 * age
+        let result = 655.1 + 9.563 * weight + 1.85 * height - 4.676 * age
         return result
     }
     else {
@@ -70,5 +70,10 @@ func pennState2010(sex: Bool, weight: Double, height: Double, age: Double, v: Do
 
 func pennStateH(sex: Bool, weight: Double, height: Double, age: Double, tMax: Double) ->Double{
     let result = 0.94 * mifflin(sex: sex, weight: weight, height: height, age:age) + tMax * 186 - 6597
+    return result
+}
+
+func kCalPerKG(weight: Double, kCalFactor: Double) -> Double{
+    let result = kCalFactor * weight
     return result
 }

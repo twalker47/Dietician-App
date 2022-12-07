@@ -19,6 +19,7 @@
 		BE32679629197817006931EC /* CalCount_StoryboardsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE32679529197817006931EC /* CalCount_StoryboardsUITestsLaunchTests.swift */; };
 		BED3AF7C291E122F009D2B54 /* equations.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED3AF7B291E122F009D2B54 /* equations.swift */; };
 		C121CF25292D4FDB00B1D87C /* HarrisController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C121CF24292D4FDB00B1D87C /* HarrisController.swift */; };
+		C1432C0F29404EF300287CA3 /* KCalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1432C0E29404EF300287CA3 /* KCalController.swift */; };
 		C1785B6E2939A3CE001C5E6B /* LivingstonController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1785B6D2939A3CE001C5E6B /* LivingstonController.swift */; };
 		C1B31BD4293934B200743F9B /* PennState2003Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B31BD2293934B200743F9B /* PennState2003Controller.swift */; };
 		C1B31BD5293934B200743F9B /* PennState2010ControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B31BD3293934B200743F9B /* PennState2010ControllerViewController.swift */; };
@@ -60,6 +61,7 @@
 		BE32679529197817006931EC /* CalCount_StoryboardsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalCount_StoryboardsUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BED3AF7B291E122F009D2B54 /* equations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = equations.swift; sourceTree = "<group>"; };
 		C121CF24292D4FDB00B1D87C /* HarrisController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarrisController.swift; sourceTree = "<group>"; };
+		C1432C0E29404EF300287CA3 /* KCalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCalController.swift; sourceTree = "<group>"; };
 		C1785B6D2939A3CE001C5E6B /* LivingstonController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LivingstonController.swift; sourceTree = "<group>"; };
 		C1B31BD2293934B200743F9B /* PennState2003Controller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PennState2003Controller.swift; sourceTree = "<group>"; };
 		C1B31BD3293934B200743F9B /* PennState2010ControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PennState2010ControllerViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +124,7 @@
 				BE32677429197814006931EC /* SceneDelegate.swift */,
 				BE32677629197814006931EC /* ViewController.swift */,
 				BE32677829197814006931EC /* Main.storyboard */,
+				C1432C0E29404EF300287CA3 /* KCalController.swift */,
 				C1B31BD2293934B200743F9B /* PennState2003Controller.swift */,
 				C1B31BD3293934B200743F9B /* PennState2010ControllerViewController.swift */,
 				BBB6259F2939239A000B7D47 /* PennStateHControllerViewController.swift */,
@@ -292,6 +295,7 @@
 				C1B31BD5293934B200743F9B /* PennState2010ControllerViewController.swift in Sources */,
 				BE32677329197814006931EC /* AppDelegate.swift in Sources */,
 				BE32677529197814006931EC /* SceneDelegate.swift in Sources */,
+				C1432C0F29404EF300287CA3 /* KCalController.swift in Sources */,
 				BED3AF7C291E122F009D2B54 /* equations.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -469,7 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T25X4LCF23;
+				DEVELOPMENT_TEAM = 5SWPHYM43S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CalCount-Storyboards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -498,7 +502,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = T25X4LCF23;
+				DEVELOPMENT_TEAM = 5SWPHYM43S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CalCount-Storyboards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
