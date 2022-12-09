@@ -6,7 +6,6 @@
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -23,25 +22,25 @@
                                 <color key="tintColor" name="SageGreen"/>
                                 <imageReference key="image" image="Calorie App Logo" symbolScale="small"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CalCount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NdK-1y-OLR">
-                                <rect key="frame" x="135" y="498" width="123" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" name="SageGreen"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="CalCount" textAlignment="center" adjustsFontForContentSizeCategory="YES" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="c9m-j0-kJf">
+                                <rect key="frame" x="121.66666666666669" y="498" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="jo8-D8-iX0"/>
+                                </constraints>
                                 <color key="textColor" name="SageGreen"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="9M7-9e-cMZ">
-                                <rect key="frame" x="186" y="542" width="20" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" name="LightGray"/>
                         <constraints>
                             <constraint firstItem="YR4-m9-Zlz" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="3mO-K4-tta"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c9m-j0-kJf" secondAttribute="bottom" constant="286" id="Evb-Wb-A7P"/>
                             <constraint firstItem="YR4-m9-Zlz" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="O7T-A1-Z0I"/>
                             <constraint firstItem="YR4-m9-Zlz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="Vtm-Jw-uqV"/>
+                            <constraint firstItem="c9m-j0-kJf" firstAttribute="centerX" secondItem="YR4-m9-Zlz" secondAttribute="centerX" id="dTY-cZ-QiA"/>
+                            <constraint firstItem="c9m-j0-kJf" firstAttribute="top" secondItem="YR4-m9-Zlz" secondAttribute="bottom" constant="8" symbolic="YES" id="nQf-pY-gMX"/>
                             <constraint firstItem="YR4-m9-Zlz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="303" id="rJM-Ir-Wgr"/>
                         </constraints>
                     </view>
@@ -53,11 +52,11 @@
     </scenes>
     <resources>
         <image name="Calorie App Logo" width="1024" height="1024"/>
+        <namedColor name="LightGray">
+            <color red="0.94099998474121094" green="0.94099998474121094" blue="0.94099998474121094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="SageGreen">
             <color red="0.42399999499320984" green="0.54500001668930054" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
