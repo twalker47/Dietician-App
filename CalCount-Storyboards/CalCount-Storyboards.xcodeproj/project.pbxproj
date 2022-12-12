@@ -46,7 +46,7 @@
 
 /* Begin PBXFileReference section */
 		BBB6259F2939239A000B7D47 /* PennStateHControllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PennStateHControllerViewController.swift; sourceTree = "<group>"; };
-		BE32676F29197814006931EC /* CalCount-Storyboards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CalCount-Storyboards.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE32676F29197814006931EC /* CalCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE32677229197814006931EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE32677429197814006931EC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		BE32677629197814006931EC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -107,7 +107,7 @@
 		BE32677029197814006931EC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BE32676F29197814006931EC /* CalCount-Storyboards.app */,
+				BE32676F29197814006931EC /* CalCount.app */,
 				BE32678529197816006931EC /* CalCount-StoryboardsTests.xctest */,
 				BE32678F29197817006931EC /* CalCount-StoryboardsUITests.xctest */,
 			);
@@ -171,7 +171,7 @@
 			);
 			name = "CalCount-Storyboards";
 			productName = "CalCount-Storyboards";
-			productReference = BE32676F29197814006931EC /* CalCount-Storyboards.app */;
+			productReference = BE32676F29197814006931EC /* CalCount.app */;
 			productType = "com.apple.product-type.application";
 		};
 		BE32678429197816006931EC /* CalCount-StoryboardsTests */ = {
@@ -473,7 +473,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XCY3TP6WC5;
+				DEVELOPMENT_TEAM = 5SWPHYM43S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CalCount-Storyboards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -487,8 +487,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "CalCount-Storyboards";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = CalCount;
+				PRODUCT_NAME = CalCount;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -502,7 +502,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XCY3TP6WC5;
+				DEVELOPMENT_TEAM = 5SWPHYM43S;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "CalCount-Storyboards/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -516,8 +516,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "CalCount-Storyboards";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = CalCount;
+				PRODUCT_NAME = CalCount;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

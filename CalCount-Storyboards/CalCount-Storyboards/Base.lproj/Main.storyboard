@@ -11,7 +11,7 @@
         <!--Equation Selection-->
         <scene sceneID="fXK-sx-HON">
             <objects>
-                <viewController id="eua-Zx-VQw" userLabel="Equation Selection" customClass="ViewController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eua-Zx-VQw" userLabel="Equation Selection" customClass="ViewController" customModule="CalCount" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5r7-jJ-7T7">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="1250"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -215,7 +215,7 @@
         <!--Mifflin St. Jeor-->
         <scene sceneID="NDS-gu-3lF">
             <objects>
-                <viewController id="2i7-VC-hJ8" userLabel="Mifflin St. Jeor" customClass="MifflinController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2i7-VC-hJ8" userLabel="Mifflin St. Jeor" customClass="MifflinController" customModule="CalCount" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AAR-Hs-mmp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -447,7 +447,7 @@
         <!--Harris-Benedict-->
         <scene sceneID="Kfx-bs-9Qi">
             <objects>
-                <viewController id="myI-pI-oQx" userLabel="Harris-Benedict" customClass="HarrisController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="myI-pI-oQx" userLabel="Harris-Benedict" customClass="HarrisController" customModule="CalCount" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="n5q-lu-Plt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -678,7 +678,7 @@
         <!--Calorie Calc Results-->
         <scene sceneID="SUf-2f-moj">
             <objects>
-                <viewController id="fTA-oE-39E" userLabel="Calorie Calc Results" customClass="ResultsController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fTA-oE-39E" userLabel="Calorie Calc Results" customClass="ResultsController" customModule="CalCount" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rbx-NB-Rac">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -822,7 +822,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbp-n7-mcz">
-                                <rect key="frame" x="92.666666666666686" y="659" width="208" height="68"/>
+                                <rect key="frame" x="92.666666666666686" y="659" width="208" height="40.333333333333371"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="77" id="QmP-i3-Rx1"/>
                                     <constraint firstAttribute="width" constant="208" id="Uf3-jS-XhG"/>
@@ -916,7 +916,7 @@
         <!--Livingston-->
         <scene sceneID="xww-KY-34E">
             <objects>
-                <viewController id="F2E-Qa-RrP" userLabel="Livingston" customClass="LivingstonController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="F2E-Qa-RrP" userLabel="Livingston" customClass="LivingstonController" customModule="CalCount" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Bs8-lG-Gli">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1106,7 +1106,7 @@
         <!--Penn State (2003b)-->
         <scene sceneID="Hue-2G-ujI">
             <objects>
-                <viewController id="CKb-id-sdK" userLabel="Penn State (2003b)" customClass="PennState2003Controller" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CKb-id-sdK" userLabel="Penn State (2003b)" customClass="PennState2003Controller" customModule="CalCount" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rFK-lF-Imj">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1390,7 +1390,7 @@
         <!--Penn State (2010)-->
         <scene sceneID="UwP-mP-JyL">
             <objects>
-                <viewController id="ZUz-7y-sZM" userLabel="Penn State (2010)" customClass="PennState2010ControllerViewController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ZUz-7y-sZM" userLabel="Penn State (2010)" customClass="PennState2010ControllerViewController" customModule="CalCount" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DYl-GS-Nme">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1674,7 +1674,7 @@
         <!--Penn State H-->
         <scene sceneID="Vhr-Fj-x7c">
             <objects>
-                <viewController id="WNG-Wl-Vn5" userLabel="Penn State H" customClass="PennStateHControllerViewController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="WNG-Wl-Vn5" userLabel="Penn State H" customClass="PennStateHControllerViewController" customModule="CalCount" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ntp-c9-v04">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1932,7 +1932,7 @@
         <!--kcal/kg-->
         <scene sceneID="oqK-2o-03W">
             <objects>
-                <viewController id="zEv-RD-PFa" userLabel="kcal/kg" customClass="KCalController" customModule="CalCount_Storyboards" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zEv-RD-PFa" userLabel="kcal/kg" customClass="KCalController" customModule="CalCount" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Nru-DP-Mvh">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
